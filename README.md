@@ -1,8 +1,8 @@
 
 
-## What's cfs.GCharts 
+## What's cfsCharts
 
-cfs.GCharts is a Delphi library of components to generate Charts in uniGUI Framework using the Google Charts API. 
+cfsCharts is a Delphi library of components to generate Charts in uniGUI Framework using the Google Charts API. 
 
 
 
@@ -34,7 +34,7 @@ The **TuniGChartsFrame** component is used to view and interact with the Chart p
 
 ### Install
 
-cfs.GCharts has been coded in Delphi 10.4 Sydney and uniGUI Version:1.90.0 build 1549, but surely can be compiled into earlier versions.
+**cfsCharts** has been coded in Delphi 10.4 Sydney and uniGUI Version:1.90.0 build 1549, but surely can be compiled into earlier versions.
 
 Install the visual component **cfs.Charts.uniGUI.dpk** that is in the uniGUI folder and also **add** to the **search path** the **sources** folder.
 
