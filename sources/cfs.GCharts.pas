@@ -1,10 +1,11 @@
 // ***************************************************************************
 //
-// Delphi Google Charts
+// cfs.GCharts: Google Chart Producer 
+// cfsCharts is a Delphi library of components to generate Charts in uniGUI Framework using the Google Charts API
 //
 // Copyright (c) 2021 Josep Pagès
 //
-// https://github.com/JosepPages7/DelphiGCharts
+// https://github.com/JosepPages7/cfsCharts
 //
 //
 // ***************************************************************************
