@@ -1,4 +1,4 @@
-package cfs.GCharts.uniGUI.Tokio;
+package cfs.GCharts.uniGUI.Seattle;
 
 
 {$R *.res}
@@ -34,9 +34,9 @@ requires
   vclimg,
   dbrtl,
   vcldb,
-  uniGUI25,
-  uIndy25,
-  uniTools25;
+  uniGUI23,
+  uIndy23,
+  uniTools23;
 
 contains
   cfs.GCharts in '..\sources\cfs.GCharts.pas',
