@@ -130,7 +130,11 @@ When running the demo you can:
 
 ------
 
-**Please, if you use cfsCharts "star" this project in GitHub! It cost nothing to you but helps other developers to reference the code.**
+# Star this project
+
+![Star this project](./img/Star.png)
+
+Please, if you use **Delphi GCharts** "star" this project in GitHub! It cost nothing to you but helps other developers to reference the code.
 
 
 
