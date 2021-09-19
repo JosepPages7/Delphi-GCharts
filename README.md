@@ -124,7 +124,7 @@ When running the demo you can:
 
 - Display the **Delphi Code** used to generate the Chart
 - Click **Google Guide** button to see the official documentation of Google Charts.
-- Click on the Chart  to see events fired
+- Click on the Chart  to see fired events
 
 
 
@@ -134,7 +134,9 @@ When running the demo you can:
 
 ![Star this project](./img/Star.png)
 
-Please, if you use **Delphi GCharts** "star" this project in GitHub! It cost nothing to you but helps other developers to reference the code.
+Please, if you use **Delphi GCharts**, "**Star**" this project in GitHub! 
+
+It cost nothing to you but helps other developers to reference the code.
 
 
 
