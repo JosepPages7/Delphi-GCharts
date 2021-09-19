@@ -32,7 +32,7 @@ The **TcfsGChartProducer** component is responsible for generating the javascrip
 
 The **TuniGChartsFrame** component is used to view and interact with the Chart produced by **TcfsGChartProducer**.
 
-### Install
+## Install
 
 **cfsCharts** has been coded in Delphi 10.4 Sydney and uniGUI Version:1.90.0 build 1549, but surely can be compiled into earlier versions.
 
@@ -40,7 +40,7 @@ Install the visual component **cfs.Charts.uniGUI.dpk** that is in the uniGUI fol
 
 
 
-### Basic Use Example
+## Basic Use Example
 
 Basic example to generate this Pie Chart:
 
@@ -130,7 +130,7 @@ When running the demo you can:
 
 ------
 
-# Star this project
+## Star this project
 
 ![Star this project](./img/Star.png)
 
