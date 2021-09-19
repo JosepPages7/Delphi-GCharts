@@ -26,7 +26,7 @@ Currently it supports the following Google Chart classes:
 - [Histogram](https://developers.google.com/chart/interactive/docs/gallery/histogram)
 - [Intervals](https://developers.google.com/chart/interactive/docs/gallery/intervals)
 - [Line](https://developers.google.com/chart/interactive/docs/gallery/linechart)
-- [Organization](https://github.com/JosepPages7/Delphi-GCharts/edit/main/README.md)
+- [Organization](https://developers.google.com/chart/interactive/docs/gallery/orgchart)
 - [Pie](https://developers.google.com/chart/interactive/docs/gallery/piechart)
 - [Sankey Diagram](https://developers.google.com/chart/interactive/docs/gallery/sankey)
 - [Scatter](https://developers.google.com/chart/interactive/docs/gallery/scatterchart)
