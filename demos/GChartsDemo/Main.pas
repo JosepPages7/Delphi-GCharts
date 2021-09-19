@@ -21,12 +21,11 @@ type
   TMainForm = class(TUniForm)
     UniPanel2: TUniPanel;
     UniLabel1: TUniLabel;
-    UniLabel2: TUniLabel;
-    UniLabel3: TUniLabel;
     panCenter: TUniPanel;
     UniPanel1: TUniPanel;
     TreeView: TUniTreeView;
     panFrame: TUniPanel;
+    UniLabel2: TUniLabel;
     procedure UniFormCreate(Sender: TObject);
     procedure UniFormDestroy(Sender: TObject);
     procedure TreeViewClick(Sender: TObject);

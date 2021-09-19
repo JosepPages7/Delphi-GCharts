@@ -33,11 +33,11 @@ object MainForm: TMainForm
     object UniLabel1: TUniLabel
       Left = 16
       Top = 16
-      Width = 67
+      Width = 76
       Height = 23
       Hint = ''
       TextConversion = txtHTML
-      Caption = 'Google'
+      Caption = 'GCharts'
       ParentFont = False
       Font.Charset = ANSI_CHARSET
       Font.Color = 15658734
@@ -47,34 +47,18 @@ object MainForm: TMainForm
       LayoutConfig.Margin = '0 0 0 10'
     end
     object UniLabel2: TUniLabel
-      Left = 89
-      Top = 16
-      Width = 53
+      Left = 104
+      Top = 17
+      Width = 49
       Height = 23
       Hint = ''
       TextConversion = txtHTML
-      Caption = 'Charts'
+      Caption = 'Demo'
       ParentFont = False
       Font.Charset = ANSI_CHARSET
       Font.Color = 14408667
       Font.Height = -19
       TabOrder = 2
-      LayoutConfig.Margin = '0 0 0 10'
-    end
-    object UniLabel3: TUniLabel
-      Left = 157
-      Top = 16
-      Width = 141
-      Height = 23
-      Hint = ''
-      TextConversion = txtHTML
-      Caption = #183' uniGUI Demo'
-      ParentFont = False
-      Font.Charset = ANSI_CHARSET
-      Font.Color = 15658734
-      Font.Height = -19
-      Font.Style = [fsBold]
-      TabOrder = 3
       LayoutConfig.Margin = '0 0 0 10'
     end
   end
