@@ -1,8 +1,8 @@
 
 
-## What's cfsCharts
+## What's Delphi-GCharts
 
-cfsCharts is a Delphi library of components to generate Charts in uniGUI Framework using the Google Charts API. 
+Delphi-GCharts is a Delphi library of components to generate Charts in uniGUI Framework using the Google Charts API. 
 
 
 
@@ -125,6 +125,12 @@ When running the demo you can:
 - Display the **Delphi Code** used to generate the Chart
 - Click **Google Guide** button to see the official documentation of Google Charts.
 - Click on the Chart  to see events fired
+
+
+
+------
+
+**Please, if you use cfsCharts "star" this project in GitHub! It cost nothing to you but helps other developers to reference the code.**
 
 
 
