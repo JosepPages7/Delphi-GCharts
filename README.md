@@ -1,8 +1,6 @@
+## Delphi-GCharts
 
-
-## What's Delphi-GCharts
-
-Delphi-GCharts is a Delphi library of components to generate Charts in uniGUI Framework using the Google Charts API. 
+Delphi-GCharts is a Delphi library of components to generate charts in uniGUI Framework using the Google Charts API. 
 
 
 
@@ -10,31 +8,50 @@ Delphi-GCharts is a Delphi library of components to generate Charts in uniGUI Fr
 
 
 
-Currently it supports  these Google Chart classes: 
+Currently it supports it supports the following Google Chart classes:
 
-| Chart Class | Chart Class |  Chart Class   | Chart Class |
-| :---------: | :---------: | :------------: | :---------: |
-| Annotation  |    Combo    |   Intervals    |    Table    |
-|    Area     |    Diff     |      Line      |  Timeline   |
-|     Bar     |    Donut    |  Organization  |  Tree Maps  |
-|   Bubble    |    Gantt    |      Pie       | Trendlines  |
-|  Calendar   |    Gauge    | Sankey Diagram |  Waterfall  |
-| Candlestick |     Geo     |    Scatter     | Word Trees  |
-|   Column    |  Histogram  |  Stepped Area  |             |
+- [Annotation](https://developers.google.com/chart/interactive/docs/gallery/annotationchart)
+- [Area](https://developers.google.com/chart/interactive/docs/gallery/areachart)
+- [Bar](https://developers.google.com/chart/interactive/docs/gallery/barchart)
+- [Bubble](https://developers.google.com/chart/interactive/docs/gallery/bubblechart)
+- [Calendar](https://developers.google.com/chart/interactive/docs/gallery/calendar)
+- [Candlestick](https://developers.google.com/chart/interactive/docs/gallery/candlestickchart)
+- [Column](https://developers.google.com/chart/interactive/docs/gallery/columnchart)
+- [Combo](https://developers.google.com/chart/interactive/docs/gallery/combochart)
+- [Diff](https://developers.google.com/chart/interactive/docs/gallery/diffchart)
+- [Donut](https://developers.google.com/chart/interactive/docs/gallery/piechart#donut)
+- [Gantt](https://developers.google.com/chart/interactive/docs/gallery/ganttchart)
+- [Gauge](https://developers.google.com/chart/interactive/docs/gallery/gauge)
+- [Geo](https://developers.google.com/chart/interactive/docs/gallery/geochart)
+- [Histogram](https://developers.google.com/chart/interactive/docs/gallery/histogram)
+- [Intervals](https://developers.google.com/chart/interactive/docs/gallery/intervals)
+- [Line](https://developers.google.com/chart/interactive/docs/gallery/linechart)
+- [Organization](https://github.com/JosepPages7/Delphi-GCharts/edit/main/README.md)
+- [Pie](https://developers.google.com/chart/interactive/docs/gallery/piechart)
+- [Sankey Diagram](https://developers.google.com/chart/interactive/docs/gallery/sankey)
+- [Scatter](https://developers.google.com/chart/interactive/docs/gallery/scatterchart)
+- [Stepped Area](https://developers.google.com/chart/interactive/docs/gallery/steppedareachart)
+- [Table](https://developers.google.com/chart/interactive/docs/gallery/table)
+- [Timeline](https://developers.google.com/chart/interactive/docs/gallery/timeline)
+- [Tree Maps](https://developers.google.com/chart/interactive/docs/gallery/treemap)
+- [Trendlines](https://developers.google.com/chart/interactive/docs/gallery/trendlines)
+- [Waterfall](https://developers.google.com/chart/interactive/docs/gallery/candlestickchart#Waterfall)
+- [Word Trees](https://developers.google.com/chart/interactive/docs/gallery/wordtree)
 
 
 
-## The components
+## Components
 
-The library has two main components the non-visual component **TcfsGChartProducer** and the visual component **TuniGChartsFrame**.
+The library has two main components:
 
-The **TcfsGChartProducer** component is responsible for generating the javascript code according to the data and options of the class chart to be generated. 
+- **TcfsGChartProducer**(non visual): this component is responsible for generating the javascript code according to the data and options of the class chart to be generated.
+- **TuniGChartsFrame**: this component is used to view and interact with the Chart produced by **TcfsGChartProducer**.
 
-The **TuniGChartsFrame** component is used to view and interact with the Chart produced by **TcfsGChartProducer**.
+
 
 ## Install
 
-Delphi-GCharts has been coded and tested in Delphi 10.4 Sydney with uniGUI Version:1.90.0 build 1549, but surely can be compiled into earlier or newer versions.
+Delphi-GCharts has been coded and tested in Delphi `10.4` Sydney with uniGUI Version: `1.90.0 build 1549`, but surely can be compiled into earlier or newer versions.
 
 Install the visual component **cfs.Charts.uniGUI.dpk** that is in the **package** folder and also **add** to the **library search path** the **sources** folder.
 
