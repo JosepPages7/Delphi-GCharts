@@ -34,9 +34,9 @@ The **TuniGChartsFrame** component is used to view and interact with the Chart p
 
 ## Install
 
-**cfsCharts** has been coded in Delphi 10.4 Sydney and uniGUI Version:1.90.0 build 1549, but surely can be compiled into earlier versions.
+Delphi-GCharts has been coded and tested in Delphi 10.4 Sydney with uniGUI Version:1.90.0 build 1549, but surely can be compiled into earlier or newer versions.
 
-Install the visual component **cfs.Charts.uniGUI.dpk** that is in the uniGUI folder and also **add** to the **search path** the **sources** folder.
+Install the visual component **cfs.Charts.uniGUI.dpk** that is in the **package** folder and also **add** to the **library search path** the **sources** folder.
 
 
 
