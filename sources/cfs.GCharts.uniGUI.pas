@@ -5,7 +5,7 @@
 //
 // Copyright (c) 2021 Josep Pagès
 //
-// https://github.com/JosepPages7/cfsCharts
+// https://github.com/JosepPages7/Delphi-GCharts
 //
 //
 // ***************************************************************************
