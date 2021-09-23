@@ -42,10 +42,15 @@ begin
 
   // Options
   Chart.Options.Title('Average Temperatures and Daylight in Iceland Throughout the Year');
-  Chart.Options.Series(['targetAxisIndex: 0', 'targetAxisIndex: 1']);
-  Chart.Options.VAxes(['title: ''Temps (Celsius)''', 'title: ''Daylight''']);
+  Chart.Options.Series(['0: {targetAxisIndex: 0}', '1: {targetAxisIndex: 1}']);
+  Chart.Options.VAxes(['0: {title: ''Temps (Celsius)''}', '1: {title: ''Daylight''}']);
   Chart.Options.VAxis('viewWindow', '{max: 30}');
-
+  Chart.Options.HAxis('ticks', '['
+     + 'new Date(2014, 0), new Date(2014, 1), new Date(2014, 2), new Date(2014, 3),'
+     + 'new Date(2014, 4),  new Date(2014, 5), new Date(2014, 6), new Date(2014, 7),'
+     + 'new Date(2014, 8), new Date(2014, 9), new Date(2014, 10), new Date(2014, 11)'
+     + ']'
+  );
   // Generate
   GChartsFrame.DocumentInit;
   GChartsFrame.DocumentSetBody(
