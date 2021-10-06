@@ -74,6 +74,7 @@ begin
   FGChartsFrame.OnSelect := OnSelectEvent;
   FGChartsFrame.BeforeDocumentPost := BeforeDocumentPost;
   FGChartsFrame.AutoResize := True;
+  //FGChartsFrame.BorderStyle := TUniBorderStyle.ubsNone;
 
   DelphiCode.BorderStyle := TUniBorderStyle.ubsNone;
 

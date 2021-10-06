@@ -341,8 +341,8 @@ procedure TuniGChartsFrame.DocumentSetBody(const HTMLText: string);
 begin
   CheckDocumentInit;
 
-  if Copy(FHTMLCode.TrimLeft, 1, 6).ToUpper <> '<BODY>' then
-    FHTMLCode := '<body style="margin 0;background-color:#ffffff;padding:0;">' + HTMLText + '</body>'
+  if Copy(HTMLText.TrimLeft, 1, 5).ToUpper <> '<BODY' then
+    FHTMLCode := '<body style="padding:0;background-color:#ffffff;">' + HTMLText + '</body>'
   else
     FHTMLCode := HTMLText;
 end;
