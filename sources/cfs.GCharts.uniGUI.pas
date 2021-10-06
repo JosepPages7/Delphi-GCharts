@@ -342,7 +342,7 @@ begin
   CheckDocumentInit;
 
   if Copy(FHTMLCode.TrimLeft, 1, 6).ToUpper <> '<BODY>' then
-    FHTMLCode := '<body>' + HTMLText + '</body>'
+    FHTMLCode := '<body style="margin 0;background-color:#ffffff;padding:0;">' + HTMLText + '</body>'
   else
     FHTMLCode := HTMLText;
 end;
