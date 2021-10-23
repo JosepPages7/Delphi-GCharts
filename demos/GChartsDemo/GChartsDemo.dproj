@@ -3,7 +3,7 @@
         <ProjectGuid>{2D671E72-D6C2-4912-9425-4EAAA7951BD5}</ProjectGuid>
         <MainSource>GChartsDemo.dpr</MainSource>
         <Base>True</Base>
-        <Config Condition="'$(Config)'==''">Debug</Config>
+        <Config Condition="'$(Config)'==''">Release</Config>
         <TargetedPlatforms>1</TargetedPlatforms>
         <AppType>Application</AppType>
         <FrameworkType>VCL</FrameworkType>

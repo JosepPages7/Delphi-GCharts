@@ -1223,9 +1223,12 @@ var
   v: string;
 begin
   s := '[';
-  for v in Values do
-    s := s + TcfsGChartData.StringToQuotedJS(v) + ',';
-  RemoveLastComma(s);
+  if Length(Values) > 0 then
+  begin
+    for v in Values do
+      s := s + TcfsGChartData.StringToQuotedJS(v) + ',';
+    RemoveLastComma(s);
+  end;
   s := s + ']';
   Result := s;
 end;
@@ -1236,9 +1239,12 @@ var
   v: string;
 begin
   s := '[';
-  for v in Values do
-    s := s + '{' + v + '},';
-  RemoveLastComma(s);
+  if Length(Values) > 0 then
+  begin
+    for v in Values do
+      s := s + '{' + v + '},';
+    RemoveLastComma(s);
+  end;
   s := s + ']';
   Result := s;
 end;
@@ -1249,9 +1255,12 @@ var
   v: string;
 begin
   s := '{';
-  for v in Values do
-    s := s + v + ',';
-  RemoveLastComma(s);
+  if Length(Values) > 0 then
+  begin
+    for v in Values do
+      s := s + v + ',';
+    RemoveLastComma(s);
+  end;
   s := s + '}';
   Result := s;
 end;
