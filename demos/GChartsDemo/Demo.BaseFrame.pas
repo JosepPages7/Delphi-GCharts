@@ -35,6 +35,7 @@ type
     iclassfabfahtml5inbspHTMLnbsp1: TUniMenuItem;
     actRefresh: TAction;
     UniToolButton3: TUniToolButton;
+    actPrint: TAction;
     procedure UniFrameCreate(Sender: TObject);
     procedure actShowDelphiCodeExecute(Sender: TObject);
     procedure actGoogleGuideExecute(Sender: TObject);
@@ -43,6 +44,7 @@ type
     procedure EventsMemoMouseDown(Sender: TObject; Button: TMouseButton;
       Shift: TShiftState; X, Y: Integer);
     procedure actRefreshExecute(Sender: TObject);
+    procedure actPrintExecute(Sender: TObject);
   private
     FGChartsFrame: TuniGChartsFrame;
     FGoogleGuideLink: string;
@@ -91,6 +93,11 @@ procedure TDemoBaseFrame.actGoogleGuideExecute(Sender: TObject);
 begin
   if GoogleGuideLink <> '' then
     UniSession.AddJS('window.open(' + GoogleGuideLink.QuotedString + ', ''_blank'');');
+end;
+
+procedure TDemoBaseFrame.actPrintExecute(Sender: TObject);
+begin
+  FGChartsFrame.DocumentPrint;
 end;
 
 procedure TDemoBaseFrame.actRefreshExecute(Sender: TObject);

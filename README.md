@@ -48,10 +48,9 @@ The library has two main components:
 - **TuniGChartsFrame**: this component is used to view and interact with the Chart produced by **TcfsGChartProducer**.
 
 
-
 ## Install
 
-Delphi-GCharts has been coded and tested in Delphi `10.4 Sydney` with uniGUI Version: `1.90.0 build 1549`, but surely can be compiled into earlier or newer versions.
+Delphi-GCharts has been coded and tested in Delphi `10.4 Sydney` with uniGUI Version: `1.90.0 build 1557`, but surely can be compiled into earlier or newer versions.
 
 Install the visual component **cfs.Charts.uniGUI.xxx.dpk** that is in the **package** folder and also **add** to the **library search path** the **sources** folder.
 
@@ -139,8 +138,8 @@ When running the demo you can:
 
 - Display the **Delphi Code** used to generate the Chart
 - Click **Google Guide** button to see the official documentation of Google Charts.
-- Click on the Chart  to see fired events
-
+- Click on the **Chart**  to see fired events
+- Click on **Print** button to print current frame with the chart/charts (new)
 
 
 ------

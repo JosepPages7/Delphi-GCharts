@@ -5,15 +5,18 @@ interface
 uses
   Windows, Messages, SysUtils, Variants, Classes, Graphics,
   Controls, Forms, uniGUITypes, uniGUIAbstractClasses,
-  uniGUIClasses, uniGUIRegClasses, uniGUIForm, uniGUIBaseClasses,
-  cfs.GCharts.uniGUI;
+  uniGUIClasses, uniGUIRegClasses, uniGUIForm, uniGUIBaseClasses, uniGUIJSInterface,
+  cfs.GCharts.uniGUI, uniPanel, Vcl.Menus, uniMainMenu, uniToolBar;
 
 type
   TMainForm = class(TUniForm)
     uniGChartsFrame1: TuniGChartsFrame;
+    UniToolBar1: TUniToolBar;
+    btnPrintChart: TUniToolButton;
     procedure UniFormCreate(Sender: TObject);
     procedure uniGChartsFrame1Select(Sender: TuniGChartsFrame;
       const ChartId, Row, Column, Value, Category: string);
+    procedure btnPrintChartClick(Sender: TObject);
   private
   public
   end;
@@ -25,11 +28,16 @@ implementation
 {$R *.dfm}
 
 uses
-  uniGUIVars, MainModule, cfs.GCharts;
+  uniGUIVars, uniGUIApplication, MainModule, cfs.GCharts;
 
 function MainForm: TMainForm;
 begin
   Result := TMainForm(UniMainModule.GetFormInstance(TMainForm));
+end;
+
+procedure TMainForm.btnPrintChartClick(Sender: TObject);
+begin
+  uniGChartsFrame1.DocumentPrint;
 end;
 
 procedure TMainForm.UniFormCreate(Sender: TObject);

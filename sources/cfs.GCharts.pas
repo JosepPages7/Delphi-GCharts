@@ -117,7 +117,7 @@ type
     class function DateTimeToJS(Value: TDateTime): TcfsJSCode; static;
     class function NumberToJS(Value: Extended): TcfsJSCode; static;
     class function StringToQuotedJS(const Value: string): TcfsJSCode; static;
-    class function StringToUnquotedJS(const Value: string): TcfsJSCode; static;
+    //class function StringToUnquotedJS(const Value: string): TcfsJSCode; static;
     class function TimeToJS(Value: TDateTime): TcfsJSCode; static;
   public
     constructor Create;
@@ -859,10 +859,10 @@ begin
   Result := SINGLE_QUOTE + StringReplace(Value, SINGLE_QUOTE, '\' + SINGLE_QUOTE, [rfReplaceAll]) + SINGLE_QUOTE;
 end;
 
-class function TcfsGChartData.StringToUnquotedJS(const Value: string): TcfsJSCode;
+(*class function TcfsGChartData.StringToUnquotedJS(const Value: string): TcfsJSCode;
 begin
   Result := TcfsGChartData.StringToUnquotedJS(Value);
-end;
+end;*)
 
 { TcfsGChartOptions }
 

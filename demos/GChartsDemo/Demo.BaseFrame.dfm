@@ -1,7 +1,7 @@
 object DemoBaseFrame: TDemoBaseFrame
   Left = 0
   Top = 0
-  Width = 1007
+  Width = 1278
   Height = 698
   OnCreate = UniFrameCreate
   Layout = 'fit'
@@ -13,7 +13,7 @@ object DemoBaseFrame: TDemoBaseFrame
   object UniToolBar1: TUniToolBar
     Left = 0
     Top = 0
-    Width = 1007
+    Width = 1278
     Height = 29
     Hint = ''
     ButtonWidth = 303
@@ -53,12 +53,27 @@ object DemoBaseFrame: TDemoBaseFrame
       Hint = ''
       Style = tbsSeparator
       Caption = ''
-      TabOrder = 3
+      TabOrder = 7
     end
     object UniToolButton3: TUniToolButton
       Left = 612
       Top = 0
       Action = actRefresh
+      TabOrder = 6
+    end
+    object UniToolButton12: TUniToolButton
+      Left = 915
+      Top = 0
+      Width = 3
+      Hint = ''
+      Style = tbsSeparator
+      Caption = ''
+      TabOrder = 3
+    end
+    object UniToolButton11: TUniToolButton
+      Left = 918
+      Top = 0
+      Action = actPrint
       TabOrder = 5
     end
   end
@@ -233,6 +248,10 @@ object DemoBaseFrame: TDemoBaseFrame
     object actRefresh: TAction
       Caption = '<i class="fas fa-sync-alt"></i>&nbsp;  Refresh&nbsp; '
       OnExecute = actRefreshExecute
+    end
+    object actPrint: TAction
+      Caption = '<i class="fas fa-print"></i>&nbsp;  Print&nbsp; '
+      OnExecute = actPrintExecute
     end
   end
   object UniPopupMenu: TUniPopupMenu

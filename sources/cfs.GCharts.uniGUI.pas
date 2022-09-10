@@ -52,6 +52,8 @@ type
     procedure H_OnLoaded(This: TJSObject; EventName: string; Params: TUniStrings);
     procedure SetHTMLDocument(const Value: string);
     procedure PostHTMLDocument;
+  private
+    FFrameName : string;
   protected
     procedure CreateFrame; virtual;
     procedure SetOnLoaded(Value: TNotifyEvent);
@@ -90,6 +92,7 @@ type
     procedure DocumentGenerate(const ChartId: string; ChartProducer: TcfsGChartProducer); overload;
     procedure DocumentGenerate(const ChartId: string; ChartProducer: IcfsGChartProducer); overload;
     procedure DocumentPost;
+    procedure DocumentPrint;
   published
     property AlignmentControl;
     property ParentAlignmentControl;
@@ -145,19 +148,17 @@ begin
 end;
 
 procedure TcfsCustomURLFrame.CreateFrame;
-var
-  FName : string;
 begin
-  FName := Name+'_'+JSName;
-  JSConfig('ifName', ['name_'+FName]);
+  FFrameName := Name+'_'+JSName;
+  JSConfig('ifName', ['name_'+FFrameName]);
   JSConfig('items',
             [JSArray('{xtype:"component",'+
                       'width:"100%",'+
                       'height:"100%",'+
                       'autoEl: {tag:"iframe",'+
                       'onload:"iframe_load('''+JSId+''')",'+
-                      'name:"name_'+FName+'",'+
-                      'title:"title_'+FName+'",'+
+                      'name:"name_'+FFrameName+'",'+
+                      'title:"title_'+FFrameName+'",'+
                       'src:"about:blank",frameborder:"0"}}')
             ]
           );
@@ -288,6 +289,12 @@ begin
 
   if Assigned(FScriptCode) or (FHTMLCode <> '') then
     HTMLDocument := GetHTMLDocument;
+end;
+
+procedure TuniGChartsFrame.DocumentPrint;
+begin
+  with JSInterface do
+    JSCallGlobal('document.getElementsByName("name_' + FFrameName + '")[0].contentWindow.print', []);
 end;
 
 function TuniGChartsFrame.GetHTMLDocument: string;
