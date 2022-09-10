@@ -141,6 +141,7 @@ When running the demo you can:
 - Click on the **Chart**  to see fired events
 - Click on **Print** button to print current frame with the chart/charts (new)
 
+![Print Sample](./img/Print.png)
 
 ------
 
