@@ -63,7 +63,9 @@ begin
   FClientDataSet.AppendRecord(['2018',  660,       1120]);
   FClientDataSet.AppendRecord(['2019',  1030,      540]);
   FClientDataSet.AppendRecord(['2020',  880,      600]);
-  FClientDataSet.AppendRecord(['2021',  null,      null]);
+  FClientDataSet.AppendRecord(['2021',  1202,      789]);
+  FClientDataSet.AppendRecord(['2022',  1400,      1100]);
+  FClientDataSet.AppendRecord(['2023',  null,      null]);
 
   DataSource1.DataSet := FClientDataSet;
 end;

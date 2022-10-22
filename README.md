@@ -145,6 +145,15 @@ When running the demo you can:
 
 ------
 
+## Change Log
+
+- **1.2**: added to the package folder *.dpk for Delphi `11.2 Alexandria` 
+- **1.1**: added print method to print the frame with the chart/charts (see Demos)
+- **1.0**: Initial Version
+
+
+------
+
 ## Star this project
 
 ![Star this project](./img/Star.png)

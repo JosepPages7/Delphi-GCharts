@@ -9,8 +9,7 @@ object MainForm: TMainForm
   AlignmentControl = uniAlignmentClient
   Layout = 'border'
   OnCreate = UniFormCreate
-  PixelsPerInch = 96
-  TextHeight = 13
+  TextHeight = 15
   object UniPanel1: TUniPanel
     Left = 32
     Top = 96
